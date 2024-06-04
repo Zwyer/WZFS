@@ -9,7 +9,7 @@ public class Login : MonoBehaviour
     // Start is called before the first frame update
     public InputField passwordInput;
     private string _pwd;
-    public GameObject changePwdPanel;
+    public GameObject changePwdPanel,GiveScorePanel;
     
     void Start()
     {
@@ -35,7 +35,7 @@ public class Login : MonoBehaviour
     {
         if (_pwd == passwordInput.text)
         {
-            Debug.Log("OK");
+            GiveScorePanel.SetActive(true);
         }
         else
         {

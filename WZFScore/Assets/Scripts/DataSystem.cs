@@ -26,7 +26,10 @@ public class DataContent
         private int time;
         private int usedScore;
         private int ScoreAfterToday;//不包括使用的
+        private bool avg1, avg2, avg3;//三及格项
+        private List<int> otherScore;
     }
 
     private int totalScore;
+    
 }
